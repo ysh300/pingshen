@@ -11,8 +11,9 @@ import java.util.List;
 public interface OpusMapper {
 
     @Insert("insert into opus(opusName, opusType, opusCourse, opusSchool, opusParticipantNames, phoneNum) " +
-            "VALUES (#{opusName},#{opusType},#{opusCourse},#{opusSchool},#{opusParticipantNames},#{phoneNum})")
+            "values (#{opusName},#{opusType},#{opusCourse},#{opusSchool},#{opusParticipantNames},#{phoneNum})")
     void upload(Opus opus);
 
     List<Opus> list(String opusName);
+
 }

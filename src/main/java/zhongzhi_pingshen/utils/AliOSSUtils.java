@@ -16,21 +16,12 @@ import java.util.UUID;
 @Component //放到ioc容器中
 public class AliOSSUtils {
 
-    /*@Value("${aliyun.oss.endpoint}")
-    private String endpoint;
-    @Value("${aliyun.oss.accessKeyId}")
-    private String accessKeyId;
-    @Value("${aliyun.oss.accessKeySecret}")
-    private String accessKeySecret;
-    @Value("${aliyun.oss.bucketName}")
-    private String bucketName;*/
-
 //    注入bean对象
     @Autowired
     private AliOSSProperties aliOSSProperties;
 
     /**
-     * 实现上传图片到OSS
+     * 实现上传文件到OSS
      */
     public String upload(MultipartFile file) throws IOException {
 //        获取参数
