@@ -1,7 +1,7 @@
 
 server:
   # 服务器的HTTP端口，默认为80
-  port: 8090
+  port: 8080
 #数据库相关配置
 spring:
   datasource:
